@@ -5,7 +5,7 @@ locals{
 }
   resource "azurerm_resource_group" "butterfly" {
   name     = "lmao"
-  location = "Central Canada"
+  location = "Canada Central"
 }
 
 resource "azurerm_kubernetes_cluster" "k8cluster" {
