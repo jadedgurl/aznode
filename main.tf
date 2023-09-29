@@ -6,6 +6,7 @@ locals{
   resource "azurerm_resource_group" "butterfly" {
   name     = "lmao"
   location = "Central Canada"
+}
 
 resource "azurerm_kubernetes_cluster" "k8cluster" {
   for_each            ={for cluster in local.clusters_name:cluster=>cluster}
